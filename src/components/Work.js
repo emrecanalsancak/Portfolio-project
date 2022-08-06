@@ -1,6 +1,6 @@
 import React from "react";
-import workImg from "../assets/workImg.jpeg";
-import realEstate from "../assets/realestate.jpg";
+import { AiFillGithub } from "react-icons/ai";
+import works from "./Works";
 
 const Work = () => {
   return (
@@ -14,36 +14,50 @@ const Work = () => {
         </div>
 
         {/* Container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* Grid */}
-          <div
-            style={{ backgroundImage: `url(${workImg})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover effects */}
-            <div className="opacity-0 group-hover:opacity-100 duration-700">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Source
-                  </button>
-                </a>
+          {works.map((el) => (
+            <div
+              style={{ backgroundImage: `url(${el.img})` }}
+              className="shadow-lg shadow-[#1b3b61] group container rounded-md flex justify-center items-center mx-auto content-div hover:scale-110 transition-all duration-500 ease-out"
+            >
+              {/* Hover effects */}
+              <div className="opacity-0 group-hover:opacity-100 duration-700">
+                <div className="w-full text-2xl font-bold text-yellow-200 tracking-wider flex justify-center items-center flex-col">
+                  <span className="p-4">{el.title}</span>
+                  <span>{el.name}</span>
+                </div>
+                <div className="pt-8 text-center">
+                  <a href={el.demoLink} target="_blank" rel="noreferrer">
+                    <button className="transition-all duration-500 ease-out border border-yellow-200 hover:scale-110 text-center rounded-lg px-4 py-3 m-2 bg-black text-yellow-200 font-bold text-lg">
+                      Demo
+                    </button>
+                  </a>
+                  <a href={el.gitLink} target="_blank" rel="noreferrer">
+                    <button className="transition-all duration-500 ease-out hover:scale-110 text-center rounded-lg px-4 py-3 m-2 ml-10 border border-yellow-200 bg-black text-yellow-200 font-bold text-lg">
+                      <span className="flex justify-center items-center">
+                        Source
+                        <AiFillGithub
+                          style={{
+                            width: "20px",
+                            color: "red",
+                            marginLeft: "10px",
+                          }}
+                        />
+                      </span>
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div
+          ))}
+
+          {/* <div
             style={{ backgroundImage: `url(${realEstate})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
-            {/* Hover effects */}
+            Hover effects
             <div className="opacity-0 group-hover:opacity-100 duration-700">
               <span className="text-2xl font-bold text-white tracking-wider">
                 React JS Application
@@ -61,7 +75,7 @@ const Work = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
