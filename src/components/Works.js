@@ -9,6 +9,7 @@ import education from "../assets/education.png";
 
 const works = [
   {
+    id: 1,
     title: "ReactJS",
     name: "Weather App",
     img: reactWeather,
@@ -16,6 +17,7 @@ const works = [
     gitLink: "https://github.com/ealsa/react-weather-app",
   },
   {
+    id: 2,
     title: "VanillaJS",
     name: "Calculator",
     img: calculator,
@@ -23,6 +25,7 @@ const works = [
     gitLink: "https://github.com/ealsa/Calculator",
   },
   {
+    id: 3,
     title: "VanillaJS",
     name: "Kanban Board",
     img: kanban,
@@ -30,6 +33,7 @@ const works = [
     gitLink: "https://github.com/ealsa/Kanban-Board",
   },
   {
+    id: 4,
     title: "VanillaJS",
     name: "Splash Page",
     img: splash,
@@ -37,6 +41,7 @@ const works = [
     gitLink: "https://github.com/ealsa/Splash-Page",
   },
   {
+    id: 5,
     title: "ReactJS",
     name: "TODO APP",
     img: todo,
@@ -44,6 +49,7 @@ const works = [
     gitLink: "https://github.com/ealsa/TODO",
   },
   {
+    id: 6,
     title: "VanillaJS",
     name: "Math Sprint",
     img: math,
@@ -51,6 +57,7 @@ const works = [
     gitLink: "https://github.com/ealsa/Math-Sprint",
   },
   {
+    id: 7,
     title: "VanillaJS",
     name: "QR Code",
     img: qr,
@@ -58,6 +65,7 @@ const works = [
     gitLink: "https://github.com/ealsa/QR-Code",
   },
   {
+    id: 8,
     title: "VanillaJS",
     name: "Education Website",
     img: education,

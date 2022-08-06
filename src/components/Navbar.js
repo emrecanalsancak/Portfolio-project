@@ -4,7 +4,6 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
-import "./Navbar.css";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -87,7 +86,7 @@ const Navbar = () => {
       </ul>
 
       {/* HAMBURGER */}
-      <div className="md:hidden z-10" onClick={handleClick}>
+      <div className="md:hidden z-15" onClick={handleClick}>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -97,7 +96,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute z-15 top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-4xl">

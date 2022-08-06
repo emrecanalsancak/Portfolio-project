@@ -22,7 +22,9 @@ const Home = () => {
               View Work
             </Link>
             <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
+              <Link to="work" smooth={true}>
+                <HiArrowNarrowRight className="ml-3" />
+              </Link>
             </span>
           </button>
         </div>

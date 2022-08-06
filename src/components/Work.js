@@ -19,6 +19,7 @@ const Work = () => {
           {/* Grid */}
           {works.map((el) => (
             <div
+              key={el.id}
               style={{ backgroundImage: `url(${el.img})` }}
               className="shadow-lg shadow-[#1b3b61] group container rounded-md flex justify-center items-center mx-auto content-div hover:scale-110 transition-all duration-500 ease-out"
             >
