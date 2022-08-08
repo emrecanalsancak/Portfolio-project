@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 border-b-2 border-pink-600">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 border-b-2 border-pink-600 z-30">
       <div>
         <Link to="home" smooth="true">
           <img
@@ -86,7 +86,7 @@ const Navbar = () => {
       </ul>
 
       {/* HAMBURGER */}
-      <div className="md:hidden z-15" onClick={handleClick}>
+      <div className="md:hidden z-20" onClick={handleClick}>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -96,7 +96,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute z-15 top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center z-10"
         }
       >
         <li className="py-6 text-4xl">
@@ -157,7 +157,7 @@ const Navbar = () => {
       </ul>
 
       {/* SOCIAL ICONS */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      <div className="lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-blue-600">
             <a

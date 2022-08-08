@@ -6,6 +6,7 @@ import todo from "../assets/todo.png";
 import math from "../assets/math.png";
 import qr from "../assets/qr.png";
 import education from "../assets/education.png";
+import ecommerce from "../assets/ecommerce.png";
 
 const works = [
   {
@@ -19,19 +20,20 @@ const works = [
   {
     id: 2,
     title: "VanillaJS",
-    name: "Calculator",
-    img: calculator,
-    demoLink: "https://ealsa.github.io/Calculator/",
-    gitLink: "https://github.com/ealsa/Calculator",
+    name: "Education Website",
+    img: education,
+    demoLink: "https://ealsa.github.io/Education-Website/",
+    gitLink: "https://github.com/ealsa/Education-Website",
   },
   {
     id: 3,
-    title: "VanillaJS",
-    name: "Kanban Board",
-    img: kanban,
-    demoLink: "https://ealsa.github.io/Kanban-Board/",
-    gitLink: "https://github.com/ealsa/Kanban-Board",
+    title: "ReactJS",
+    name: "E-Commerce",
+    img: ecommerce,
+    demoLink: "https://ealsa.github.io/e-commerce-react/",
+    gitLink: "https://github.com/ealsa/e-commerce-react",
   },
+
   {
     id: 4,
     title: "VanillaJS",
@@ -59,18 +61,26 @@ const works = [
   {
     id: 7,
     title: "VanillaJS",
+    name: "Kanban Board",
+    img: kanban,
+    demoLink: "https://ealsa.github.io/Kanban-Board/",
+    gitLink: "https://github.com/ealsa/Kanban-Board",
+  },
+  {
+    id: 8,
+    title: "VanillaJS",
     name: "QR Code",
     img: qr,
     demoLink: "https://ealsa.github.io/QR-Code/",
     gitLink: "https://github.com/ealsa/QR-Code",
   },
   {
-    id: 8,
+    id: 9,
     title: "VanillaJS",
-    name: "Education Website",
-    img: education,
-    demoLink: "https://ealsa.github.io/Education-Website/",
-    gitLink: "https://github.com/ealsa/Education-Website",
+    name: "Calculator",
+    img: calculator,
+    demoLink: "https://ealsa.github.io/Calculator/",
+    gitLink: "https://github.com/ealsa/Calculator",
   },
 ];
 
