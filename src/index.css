@@ -24,3 +24,7 @@
 .content-div:hover {
   background: rgb(4, 4, 26) !important;
 }
+
+.active {
+  border-bottom: 2px solid rgb(219 39 119);
+}
