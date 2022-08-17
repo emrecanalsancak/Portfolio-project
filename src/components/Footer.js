@@ -28,7 +28,7 @@ const Footer = () => {
             <FaLinkedin size={20} />
           </a>
         </li>
-        <li className="flex justify-center items-center w-[160px] h-[60px] border-2 border-pink-600">
+        <li className="flex justify-center items-center w-[160px] h-[60px]">
           <button
             className="flex justify-center items-center w-[90%] h-full text-yellow-200 bg-black font-bold rounded-xl"
             onClick={saveFile}
