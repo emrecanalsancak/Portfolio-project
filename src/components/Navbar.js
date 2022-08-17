@@ -4,6 +4,12 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
+import resume from "../assets/resume.pdf";
+import { saveAs } from "file-saver";
+
+export const saveFile = () => {
+  saveAs(resume, "Emre C. Alsancak RESUME.pdf");
+};
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -162,9 +168,11 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://www.linkedin.com/in/ec-alsancak/"
+              target="_blank"
+              rel="noreferrer"
             >
-              Linkedin <FaLinkedin size={30} />
+              LinkedIn <FaLinkedin size={30} />
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-[#333]">
@@ -187,12 +195,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-[#565f69]">
-            <a
+            <button
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              onClick={saveFile}
             >
               Resume <BsFillPersonLinesFill size={30} />
-            </a>
+            </button>
           </li>
         </ul>
       </div>
