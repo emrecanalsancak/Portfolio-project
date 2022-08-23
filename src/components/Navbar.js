@@ -4,7 +4,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
-import resume from "../assets/ecresume.pdf";
+import resume from "../assets/resume.pdf";
 import { saveAs } from "file-saver";
 
 export const saveFile = () => {
