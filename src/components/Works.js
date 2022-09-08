@@ -1,5 +1,4 @@
 import reactWeather from "../assets/react-weather.png";
-import calculator from "../assets/calculator.png";
 import kanban from "../assets/kanban.png";
 import splash from "../assets/splash.png";
 import todo from "../assets/todo.png";
@@ -11,7 +10,7 @@ import restCountry from "../assets/rest-countries.png";
 
 const works = [
   {
-    id: 10,
+    id: 9,
     title: "ReactJS",
     name: "Rest Countries Api",
     img: restCountry,
@@ -82,14 +81,6 @@ const works = [
     img: qr,
     demoLink: "https://ealsa.github.io/QR-Code/",
     gitLink: "https://github.com/ealsa/QR-Code",
-  },
-  {
-    id: 9,
-    title: "VanillaJS",
-    name: "Calculator",
-    img: calculator,
-    demoLink: "https://ealsa.github.io/Calculator/",
-    gitLink: "https://github.com/ealsa/Calculator",
   },
 ];
 
