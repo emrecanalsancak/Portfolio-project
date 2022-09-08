@@ -7,8 +7,17 @@ import math from "../assets/math.png";
 import qr from "../assets/qr.png";
 import education from "../assets/education.png";
 import ecommerce from "../assets/ecommerce.png";
+import restCountry from "../assets/rest-countries.png";
 
 const works = [
+  {
+    id: 10,
+    title: "ReactJS",
+    name: "Rest Countries Api",
+    img: restCountry,
+    demoLink: "https://countries-rest-api-v3.netlify.app",
+    gitLink: "https://github.com/ealsa/rest-countries",
+  },
   {
     id: 1,
     title: "ReactJS",
